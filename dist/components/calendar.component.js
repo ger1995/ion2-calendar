@@ -188,7 +188,7 @@ var CalendarComponent = /** @class */ (function () {
         return date.valueOf();
     };
     CalendarComponent.prototype._monthFormat = function (date) {
-        return moment(date).format(this._d.monthFormat.replace(/y/g, 'Y'));
+        return moment(date).locale(this._d.locale).format(this._d.monthFormat.replace(/y/g, 'Y'));
     };
     CalendarComponent.prototype.initOpt = function () {
         if (this._options && typeof this._options.showToggleButtons === 'boolean') {

@@ -169,7 +169,7 @@ var CalendarModal = /** @class */ (function () {
         return moment(moment(date).format('YYYY-MM-DD')).valueOf();
     };
     CalendarModal.prototype._monthFormat = function (date) {
-        return moment(date).format(this._d.monthFormat.replace(/y/g, 'Y'));
+        return moment(date).locale(this._d.locale).format(this._d.monthFormat.replace(/y/g, 'Y'));
     };
     CalendarModal.prototype.trackByIndex = function (index, moment) {
         return moment.original ? moment.original.time : index;

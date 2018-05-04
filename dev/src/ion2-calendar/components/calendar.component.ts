@@ -281,7 +281,7 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
   }
 
   _monthFormat(date: number): string {
-    return moment(date).format(this._d.monthFormat.replace(/y/g, 'Y'))
+    return moment(date).locale(this._d.locale).format(this._d.monthFormat.replace(/y/g, 'Y'))
   }
 
   private initOpt(): void {

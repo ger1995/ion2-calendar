@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.defaults = {
+    LOCALE: 'nl-NL',
     DATE_FORMAT: 'YYYY-MM-DD',
     COLOR: 'primary',
     WEEKS_FORMAT: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
