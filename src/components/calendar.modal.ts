@@ -266,7 +266,7 @@ export class CalendarModal implements OnInit {
   }
 
   _monthFormat(date: any): string {
-    return moment(date).format(this._d.monthFormat.replace(/y/g, 'Y'))
+    return moment(date).locale(this._d.locale).format(this._d.monthFormat.replace(/y/g, 'Y'))
   }
 
   trackByIndex(index: number, moment: CalendarMonth): number {
